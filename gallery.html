@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - Kumpulan Gambar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    body { background: #ffffff; color: #1e293b; padding: 24px; font-size: 13.5px; }
+    .marquee-box { background: #0f172a; color: #38bdf8; padding: 8px 12px; border-radius: 6px; margin: 12px 0 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+    .card { border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #fff; }
+    /* Hyperlink dari Gambar (Poin 5) */
+    .card a img { width: 100%; height: 140px; object-fit: cover; display: block; transition: transform 0.2s; }
+    .card a:hover img { transform: scale(1.05); }
+    .desc { padding: 10px; font-size: 12px; color: #475569; }
+  </style>
+</head>
+<body>
+  <h2 style="color: #b45309;">📸 Galeri Kumpulan Gambar Praktikum</h2>
+  
+  <!-- Tag Marquee sesuai Poin 3 ("boleh pakai marquee") -->
+  <div class="marquee-box">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      ✨ Galeri Praktikum Desain Web &bull; Poin 3: Fitur Marquee &bull; Poin 5: Klik Gambar untuk membuka link gambar (Hyperlink dari Gambar) &bull; Aulya Reski (0110124254) ✨
+    </marquee>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <a href="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200" target="_blank" title="Klik untuk membuka gambar resolusi penuh">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=80" alt="Praktikum Coding">
+      </a>
+      <div class="desc"><strong>Praktikum Desain Web</strong><br>Sesi pembuatan layout frameset di lab komputer.</div>
+    </div>
+    <div class="card">
+      <a href="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200" target="_blank" title="Klik untuk membuka gambar resolusi penuh">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop&q=80" alt="Diskusi Kelompok">
+      </a>
+      <div class="desc"><strong>Diskusi Proyek Web</strong><br>Kolaborasi perancangan sistem informasi terpadu.</div>
+    </div>
+    <div class="card">
+      <a href="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200" target="_blank" title="Klik untuk membuka gambar resolusi penuh">
+        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500&auto=format&fit=crop&q=80" alt="UI/UX Prototyping">
+      </a>
+      <div class="desc"><strong>Perancangan UI/UX</strong><br>Wireframing dan perancangan tata letak website.</div>
+    </div>
+    <div class="card">
+      <a href="https://nurulfikri.ac.id" target="_blank" title="Klik untuk mengunjungi website resmi STT-NF">
+        <img src="/assets/gedung_nurul_fikri.jpg" alt="Gedung Kampus STT Terpadu Nurul Fikri">
+      </a>
+      <div class="desc"><strong>Gedung Kampus STT Terpadu Nurul Fikri</strong><br>Pusat belajar teknologi dan rekayasa perangkat lunak.</div>
+    </div>
+  </div>
+</body>
+</html>

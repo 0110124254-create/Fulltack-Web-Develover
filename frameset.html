@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas Frame - Aulya Reski (0110124254) - Sistem Informasi</title>
+</head>
+<!--
+  PENGATURAN FRAMESET SESUAI GAMBAR & PETUNJUK SOAL:
+  1. Header: banner web (header.html)
+  2. Navigation Menu: link internal (menu.html)
+  3. Content: 3 kolom (left.html, main_frame -> home.html, right.html)
+  4. Footer: tentang pembuat halaman (footer.html)
+  
+  Ketentuan Penilaian:
+  1. Setting Frameset (30%)
+  2. Setting Frame (30%)
+  3. Hyperlink internal (10%)
+  4. Hyperlink eksternal (10%)
+  5. Hyperlink dari gambar (10%)
+  6. Hyperlink dengan tujuan tertentu (10%)
+-->
+<frameset rows="95,46,*,45" frameborder="1" border="2" framespacing="2" bordercolor="#94a3b8">
+  <!-- 1. Area Header (header.html => banner web) -->
+  <frame src="header.html" name="header_frame" scrolling="no" noresize marginwidth="0" marginheight="0">
+
+  <!-- 2. Area Navigation Menu (menu.html => link internal) -->
+  <frame src="menu.html" name="menu_frame" scrolling="no" noresize marginwidth="0" marginheight="0">
+
+  <!-- 3. Area Content Tengah (3 Kolom) -->
+  <frameset cols="22%,*,22%" frameborder="1" border="2" framespacing="2" bordercolor="#94a3b8">
+    <!-- Kolom Kiri: Sosmed Teman Minimal 5 Orang (left.html) -->
+    <frame src="left.html" name="left_frame" scrolling="auto" marginwidth="8" marginheight="8">
+
+    <!-- Kolom Tengah: Main Content Target Link Internal (name="main_frame") -->
+    <frame src="home.html" name="main_frame" scrolling="auto" marginwidth="16" marginheight="16">
+
+    <!-- Kolom Kanan: Materi Pembelajaran Fullstack Minimal 5 Buah (right.html) -->
+    <frame src="right.html" name="right_frame" scrolling="auto" marginwidth="8" marginheight="8">
+  </frameset>
+
+  <!-- 4. Area Footer (footer.html => tentang pembuat halaman) -->
+  <frame src="footer.html" name="footer_frame" scrolling="no" noresize marginwidth="0" marginheight="0">
+
+  <!-- Fallback jika browser tidak mendukung frameset -->
+  <noframes>
+    <body>
+      <p>Browser Anda tidak mendukung tag frameset. Silakan buka masing-masing file HTML.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>

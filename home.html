@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Personal Profile</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    body { background: #ffffff; color: #1e293b; padding: 24px; line-height: 1.6; font-size: 14px; }
+    .hero { display: flex; gap: 20px; align-items: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin-bottom: 20px; }
+    .avatar-link { width: 90px; height: 90px; border-radius: 50%; overflow: hidden; border: 3px solid #0284c7; flex-shrink: 0; display: block; }
+    .avatar-img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; border: 1px solid #e2e8f0; }
+    td { padding: 8px 12px; border-bottom: 1px solid #f1f5f9; }
+    tr:nth-child(even) { background: #f8fafc; }
+    .label { width: 220px; font-weight: 600; color: #334155; }
+  </style>
+</head>
+<body>
+  <!-- Area Main Content: Home / Personal Profile (Poin 3 & Poin 5) -->
+  <div class="hero">
+    <!-- Hyperlink dari Gambar (Poin 5 Ketentuan Penilaian) -->
+    <a href="https://student.nurulfikri.ac.id" target="_blank" title="Klik foto profil untuk membuka Portal Mahasiswa" class="avatar-link">
+      <img src="/assets/aulya_profile.jpg" alt="Foto Profil Aulya Reski" class="avatar-img">
+    </a>
+    <div>
+      <h2 style="font-size: 22px; color: #0f172a;">Aulya Reski</h2>
+      <div style="font-size: 13px; color: #0284c7; font-weight: 700;">Mahasiswa Sistem Informasi &bull; Rombel SI05 &bull; Semester 5</div>
+      <p style="font-size: 12.5px; color: #64748b; margin-top: 4px;">Selamat datang di Personal Profile. Area ini merupakan target utama link internal (home.html) pada area main_frame.</p>
+    </div>
+  </div>
+
+  <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px; margin-bottom:16px; display:flex; gap:12px; align-items:center;">
+    <a href="https://nurulfikri.ac.id" target="_blank" title="Klik foto gedung kampus">
+      <img src="/assets/gedung_nurul_fikri.jpg" alt="Gedung STT-NF" style="width:120px; height:75px; object-fit:cover; border-radius:6px; border:1.5px solid #0284c7; display:block;">
+    </a>
+    <div>
+      <div style="font-size:13px; font-weight:700; color:#0f172a;">Gedung STT Terpadu Nurul Fikri</div>
+      <div style="font-size:12px; color:#64748b;">Kampus teknologi pencetak sarjana Sistem Informasi berkarakter dan kompeten di industri.</div>
+    </div>
+  </div>
+
+  <h3 style="border-left: 4px solid #0284c7; padding-left: 8px; margin-bottom: 8px; color: #0f172a;">📌 Biodata Lengkap Mahasiswa</h3>
+  <table>
+    <tr><td class="label">Nama Lengkap</td><td>:</td><td><strong>Aulya Reski</strong></td></tr>
+    <tr><td class="label">NIM</td><td>:</td><td><strong>0110124254</strong></td></tr>
+    <tr><td class="label">Program Studi</td><td>:</td><td>Sistem Informasi (S1)</td></tr>
+    <tr><td class="label">Rombel & Semester</td><td>:</td><td>SI05 &bull; Semester 5</td></tr>
+    <tr><td class="label">Perguruan Tinggi</td><td>:</td><td>STT Terpadu Nurul Fikri (STT-NF)</td></tr>
+    <tr><td class="label">Email Mahasiswa</td><td>:</td><td>0110124254@student.nurulfikri.ac.id</td></tr>
+    <tr><td class="label">Tempat, Tanggal Lahir</td><td>:</td><td>Lhokseumawe, 10 Agustus 1998</td></tr>
+    <tr><td class="label">Jenis Kelamin</td><td>:</td><td>Laki-laki</td></tr>
+    <tr><td class="label">Minat & Spesialisasi</td><td>:</td><td><strong>Fullstack Web Developer</strong></td></tr>
+  </table>
+</body>
+</html>

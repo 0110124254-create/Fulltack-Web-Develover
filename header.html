@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Header - Banner Web</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    body {
+      background: linear-gradient(135deg, #090d16 0%, #1e293b 60%, #1e1b4b 100%);
+      color: #f8fafc;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .banner-brand { display: flex; align-items: center; gap: 14px; }
+    /* Hyperlink dari Gambar sesuai Ketentuan Penilaian Poin 5 (Bobot 10%) */
+    .logo-link {
+      display: block; width: 48px; height: 48px; border-radius: 10px;
+      overflow: hidden; border: 2px solid #38bdf8;
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+    }
+    .logo-img { width: 100%; height: 100%; object-fit: cover; }
+    .titles h1 { font-size: 17px; font-weight: 800; color: #ffffff; }
+    .titles p { font-size: 11.5px; color: #94a3b8; margin-top: 3px; }
+    .badge-nim {
+      background: rgba(14, 165, 233, 0.15); border: 1px solid #0284c7;
+      color: #38bdf8; padding: 3px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 700; font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner-brand">
+    <!-- Hyperlink dari Gambar -->
+    <a href="https://nurulfikri.ac.id" target="_blank" title="Kunjungi Website Resmi STT-NF" class="logo-link">
+      <img src="/assets/gedung_nurul_fikri.jpg" alt="Gedung STT-NF" class="logo-img">
+    </a>
+    <div class="titles">
+      <h1>DESAIN WEB &bull; TUGAS LAYOUT FRAMESET</h1>
+      <p>Aulya Reski &bull; Sistem Informasi &bull; STT Terpadu Nurul Fikri</p>
+    </div>
+  </div>
+  <div>
+    <div class="badge-nim">NIM: 0110124254</div>
+    <div style="font-size: 11px; color: #cbd5e1; margin-top: 3px; text-align: right;">Matkul: <strong>Desain Web &bull; SI05 (Semester 5)</strong></div>
+  </div>
+</body>
+</html>
